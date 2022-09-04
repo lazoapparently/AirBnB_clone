@@ -55,7 +55,9 @@ class FileStorage:
                 jsn_file = json.load(f)
 
             for k in jsn_file:
-                self.__objects[k] = classes[jsn_file[k]["__class__"]](**jsn_file[k])
+                self.__objects[k] = classes[jsn_file[k]["__class__"]](
+                    **jsn_file[k]
+                )
 
         except FileNotFoundError:
             pass
