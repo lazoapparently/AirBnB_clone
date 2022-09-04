@@ -37,7 +37,7 @@ class TestFileStorageConformance(unittest.TestCase):
         """Test that models/engine/file_storage.py conforms to PEP8."""
         pep8s = pep8.StyleGuide(quiet=True)
         result = pep8s.check_files(['models/engine/file_storage.py'])
-        self.assertNotEqual(
+        self.assertEqual(
             result.total_errors, 0,
             "Found code style errors (and warnings)."
         )
