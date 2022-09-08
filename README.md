@@ -39,9 +39,23 @@ help or ?
 You can also run shell commands. Example:
 !pwd, !ls, !clear. You must preceed the command with '!'.
 
+You can also run the previous command by executing:
+echo $last
+
 To exit the console run:
 quit or EOF
 ```
+---
+---
+
+## Packages
+---
+---
+The models package handles all creation of objects and their serialization and deserialization
+---
+The tests package handles the testing of the models
+---
+---
 ---
 ---
 
