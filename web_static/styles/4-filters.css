@@ -2,8 +2,11 @@
     background-color: white;
     height: 70px;
     width: 100%;
-    border: 1px#DDDDDD;
+    border: 1px solid #DDDDDD;
     border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .search-button {
@@ -14,7 +17,8 @@
     width: 20%;
     border: 0px;
     border-radius: 4px;
-    text-align: 30px center;
+    margin-left: 70%;
+    justify-content: center;
 }
 
 .search-button:hover {
